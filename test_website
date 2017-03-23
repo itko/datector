@@ -1,0 +1,371 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Important Dates for Course Enrolment - Electrical &amp; Computer Engineering | Electrical &amp; Computer Engineering</title>
+
+		<!-- Google Chrome Frame for IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- mobile meta -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- icons & favicons -->
+		<link rel="apple-touch-icon" href="https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/apple-icon-touch.png">
+		<link rel="icon" href="https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/favicon.png">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#1e3363">
+		<meta name="msapplication-TileImage" content="https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/win8-tile-icon.png">
+
+		<link rel="pingback" href="https://www.ece.utoronto.ca/xmlrpc.php">
+
+		<!-- wordpress head functions -->
+		
+<!-- This site is optimized with the Yoast SEO plugin v4.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.ece.utoronto.ca/graduates/courses/dates/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Important Dates for Course Enrolment - Electrical &amp; Computer Engineering" />
+<meta property="og:description" content="Enrolment for 2016-17 academic year 1000-level ECE-prefixed graduate courses will open on ACORN on August 2, 2016. 2016 Fall Session Deadlines (September to December 2016): The deadline to add 2016 Fall session (F) courses on ACORN is September 26, 2016. If you are required to submit an Add Course Form as per your course enrolment instructions, the deadline to submit the form...  Read more &raquo;" />
+<meta property="og:url" content="https://www.ece.utoronto.ca/graduates/courses/dates/" />
+<meta property="og:site_name" content="Electrical &amp; Computer Engineering" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Electrical &amp; Computer Engineering &raquo; Feed" href="https://www.ece.utoronto.ca/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Electrical &amp; Computer Engineering &raquo; Comments Feed" href="https://www.ece.utoronto.ca/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Electrical &amp; Computer Engineering &raquo; Important Dates for Course Enrolment Comments Feed" href="https://www.ece.utoronto.ca/graduates/courses/dates/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ece.utoronto.ca\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='mp-store-theme-css'  href='https://www.ece.utoronto.ca/wp-content/marketpress-styles/ece.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.ece.utoronto.ca/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://www.ece.utoronto.ca/wp-content/tablepress-combined.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='engineering-stylesheet-css'  href='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/css/style.min.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='engineering-ie-only-css'  href='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/css/ie.min.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MP_Ajax = {"ajaxUrl":"https:\/\/www.ece.utoronto.ca\/wp-admin\/admin-ajax.php","emptyCartMsg":"Are you sure you want to remove all items from your cart?","successMsg":"Item(s) Added!","imgUrl":"https:\/\/www.ece.utoronto.ca\/wp-content\/plugins\/marketpress\/marketpress-includes\/images\/loading.gif","addingMsg":"Adding to your cart...","outMsg":"In Your Cart","addToCartErrorMsg":"Oops... it looks like something went wrong and we couldn't add an item to your cart. Please check your cart for any missing items and try again.","showFilters":"0","links":{"-1":"https:\/\/www.ece.utoronto.ca\/store\/products","66":"https:\/\/www.ece.utoronto.ca\/store\/products\/category\/deposits\/","71":"https:\/\/www.ece.utoronto.ca\/store\/products\/category\/tnfc-industry\/"},"countriesNoPostCode":{"AO":"Angola","AG":"Antigua And Barbuda","AW":"Aruba","BS":"Bahamas","BZ":"Belize","BJ":"Benin","BW":"Botswana","BF":"Burkina Faso","BI":"Burundi","CM":"Cameroon","CF":"Central African Republic","KM":"Comoros","CG":"Congo","CD":"Congo, The Democratic Republic Of The","CK":"Cook Islands","CI":"Cote D\u200c\u2019Ivoire","DJ":"Djibouti","DM":"Dominica","TP":"East Timor","GQ":"Equatorial Guinea","ER":"Eritrea","FJ":"Fiji","TF":"French Southern Territories","GM":"Gambia","GH":"Ghana","GD":"Grenada","GN":"Guinea","GY":"Guyana","HK":"Hong Kong","IE":"Ireland","JM":"Jamaica","KE":"Kenya","KI":"Kiribati","KP":"Korea, Democratic People\u200c\u2019s Republic Of","MO":"Macau","MW":"Malawi","ML":"Mali","MR":"Mauritania","MU":"Mauritius","MS":"Montserrat","NR":"Nauru","AN":"Netherlands Antilles","NU":"Niue","PA":"Panama","QA":"Qatar","RW":"Rwanda","KN":"Saint Kitts And Nevis","LC":"Saint Lucia","ST":"Sao Tome And Principe","SA":"Saudi Arabia","SC":"Seychelles","SL":"Sierra Leone","SB":"Solomon Islands","SO":"Somalia","SR":"Suriname","SY":"Syrian Arab Republic","TZ":"Tanzania, United Republic Of","TK":"Tokelau","TO":"Tonga","TT":"Trinidad And Tobago","TV":"Tuvalu","UG":"Uganda","AE":"United Arab Emirates","VU":"Vanuatu","YE":"Yemen","ZW":"Zimbabwe"},"productCategory":"-1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-content/plugins/marketpress/marketpress-includes/js/ajax-cart.js'></script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-content/plugins/google-analyticator/external-tracking.min.js'></script>
+<link rel='https://api.w.org/' href='https://www.ece.utoronto.ca/wp-json/' />
+<link rel='shortlink' href='https://www.ece.utoronto.ca/?p=918' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ece.utoronto.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ece.utoronto.ca%2Fgraduates%2Fcourses%2Fdates%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ece.utoronto.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ece.utoronto.ca%2Fgraduates%2Fcourses%2Fdates%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.ece.utoronto.ca/?wordfence_logHuman=1&hid=9F3EB13B2B47C4700BB621D14CA74FD2');
+</script><!-- Google Analytics Tracking by Google Analyticator 6.5.2: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = ['pdf','doc','ppt'];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-3347683-30']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+		<!-- end of wordpress head -->
+
+	</head>
+
+	<body class="page-template-default page page-id-918 page-child parent-pageid-807">
+
+		<div id="container">
+
+			<header class="header" role="banner">
+    
+				<nav id="fase-link">
+					<a href="http://www.engineering.utoronto.ca/">University of Toronto, Faculty of Applied Science &amp; Engineering</a>
+				</nav>
+
+				<div id="header-global-nav">
+
+					<div id="header-search">
+						<form role="search" method="get" id="searchform" action="https://www.ece.utoronto.ca/" >
+    <label class="screen-reader-text" for="s">Search for:</label>
+    <input type="text" value="" name="s" id="s" placeholder="Search this Site..." />
+    <input type="submit" id="searchsubmit" value="Search" />
+    </form>					</div>
+                    
+					<nav role="navigation">
+						<ul id="menu-uoft-nav" class="nav clearfix"><li id="menu-item-1358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1358"><a href="http://engineering.utoronto.ca">Engineering Home</a></li>
+<li id="menu-item-1359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1359"><a href="https://www.ece.utoronto.ca/about/finding-us/">Contact Us</a></li>
+<li id="menu-item-1360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1360"><a href="http://utoronto.ca">U of T Home</a></li>
+</ul>					</nav>
+
+				</div>
+
+				<p id="logo" class="h1"><a href="https://www.ece.utoronto.ca" rel="nofollow">Electrical &amp; Computer Engineering</a></p>
+			
+				<nav id="nav" role="navigation">
+					<ul id="menu-top-nav" class="nav clearfix"><li id="menu-item-1453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1453"><a href="https://www.ece.utoronto.ca/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-1362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1362"><a href="https://www.ece.utoronto.ca/about/department/">About the Department</a></li>
+	<li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://www.ece.utoronto.ca/about/from-the-chair/">From the Chair</a></li>
+	<li id="menu-item-11355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11355"><a href="https://www.ece.utoronto.ca/about/annum/">Annual Report</a></li>
+	<li id="menu-item-1402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1402"><a href="https://www.ece.utoronto.ca/about/finding-us/">Contacting Us</a></li>
+	<li id="menu-item-1380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1380"><a href="https://www.ece.utoronto.ca/about/department-history/">Department History</a></li>
+	<li id="menu-item-3570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3570"><a href="https://www.ece.utoronto.ca/general-resources/visitor-information/">Visitor Information</a></li>
+	<li id="menu-item-1404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1404"><a href="https://www.ece.utoronto.ca/about/distinguished-lectures/">Distinguished Lectures Series</a></li>
+	<li id="menu-item-1430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1430"><a href="https://www.ece.utoronto.ca/about/entrepreneurship-series/">Engineering Entrepreneurship Series</a></li>
+	<li id="menu-item-1405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1405"><a href="https://www.ece.utoronto.ca/about/partnership-lectures/">Research Partnership Lectures</a></li>
+	<li id="menu-item-1406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1406"><a href="https://www.ece.utoronto.ca/faculty/opportunities/">Faculty Opportunities</a></li>
+	<li id="menu-item-7551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7551"><a href="https://www.ece.utoronto.ca/events/">Events in ECE</a></li>
+	<li id="menu-item-14176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14176"><a href="https://www.ece.utoronto.ca/about/accessibility/">Accessibility</a></li>
+</ul>
+</li>
+<li id="menu-item-1364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1364"><a href="https://www.ece.utoronto.ca/prospective-students/">Prospective Students</a>
+<ul class="sub-menu">
+	<li id="menu-item-1363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1363"><a href="https://www.ece.utoronto.ca/prospective-students/what-is-ece/">What is ECE?</a></li>
+	<li id="menu-item-1407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1407"><a href="https://www.ece.utoronto.ca/prospective-students/why-be-an-engineer/">Why Be an Electrical or Computer Engineer?</a></li>
+	<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="https://www.ece.utoronto.ca/prospective-students/curriculum-streams/">Programs &#038; Focus Areas</a></li>
+	<li id="menu-item-1409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://www.ece.utoronto.ca/prospective-students/admissions/">Admissions</a></li>
+	<li id="menu-item-1410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1410"><a href="https://www.ece.utoronto.ca/prospective-students/pey/">Professional Experience Year (PEY) – Co-op</a></li>
+	<li id="menu-item-1411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1411"><a href="https://www.ece.utoronto.ca/prospective-students/residence/">Housing &#038; Residence</a></li>
+	<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://www.ece.utoronto.ca/graduates/welcome/">Prospective Graduate Students</a></li>
+</ul>
+</li>
+<li id="menu-item-1366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1366"><a href="https://www.ece.utoronto.ca/undergraduates/">Undergraduates</a>
+<ul class="sub-menu">
+	<li id="menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1416"><a href="https://www.ece.utoronto.ca/undergraduates/programs/">Program Information</a></li>
+	<li id="menu-item-1417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1417"><a href="https://www.ece.utoronto.ca/undergraduates/announcements/">Undergraduate Announcements</a></li>
+	<li id="menu-item-6372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6372"><a href="https://www.ece.utoronto.ca/undergraduates/faq/">FAQ</a></li>
+	<li id="menu-item-10358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10358"><a href="https://www.ece.utoronto.ca/undergraduates/programs/magellan/">Magellan</a></li>
+	<li id="menu-item-1422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1422"><a href="https://www.ece.utoronto.ca/undergraduates/first-year/">First Year Info</a></li>
+	<li id="menu-item-1423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1423"><a href="https://www.ece.utoronto.ca/undergraduates/scholarships/">Scholarships and Awards</a></li>
+	<li id="menu-item-12218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12218"><a href="https://www.ece.utoronto.ca/undergraduates/sessional-instructors-cupe-3902-unit-3/">Sessional Instructors CUPE 3902 Unit 3</a></li>
+	<li id="menu-item-1429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1429"><a href="https://www.ece.utoronto.ca/undergraduates/ta/">Teaching Assistantships</a></li>
+	<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6371"><a href="https://www.ece.utoronto.ca/undergraduates/hardware-computer-labs/">Hardware and Computer Labs</a></li>
+	<li id="menu-item-1428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1428"><a href="https://www.ece.utoronto.ca/undergraduates/academic-integrity/">Academic Integrity</a></li>
+	<li id="menu-item-1424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1424"><a href="https://www.ece.utoronto.ca/undergraduates/student-organizations/">Student Organizations</a></li>
+	<li id="menu-item-1426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1426"><a href="https://www.ece.utoronto.ca/undergraduates/ungrad-support-services/">Support Services</a></li>
+	<li id="menu-item-1427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1427"><a href="https://www.ece.utoronto.ca/undergraduates/office/">Undergraduate Office</a></li>
+</ul>
+</li>
+<li id="menu-item-1368" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-1368"><a href="https://www.ece.utoronto.ca/graduates/">Graduate Students</a>
+<ul class="sub-menu">
+	<li id="menu-item-1431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="https://www.ece.utoronto.ca/graduates/welcome/">Graduate Studies</a></li>
+	<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://www.ece.utoronto.ca/graduates/admission/">Admission</a></li>
+	<li id="menu-item-1435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435"><a href="https://www.ece.utoronto.ca/graduates/new-students/">New Students</a></li>
+	<li id="menu-item-1377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1377"><a href="https://www.ece.utoronto.ca/graduates/degree-programs/">Degree Programs</a></li>
+	<li id="menu-item-1378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1378"><a href="https://www.ece.utoronto.ca/graduates/registration/">Registration &#038; Fees</a></li>
+	<li id="menu-item-1436" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1436"><a href="https://www.ece.utoronto.ca/graduates/courses/">Courses</a></li>
+	<li id="menu-item-1384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1384"><a href="https://www.ece.utoronto.ca/graduates/financial-support/">Financial Support</a></li>
+	<li id="menu-item-1437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1437"><a href="https://www.ece.utoronto.ca/graduates/nserc-ogs/">Major Scholarships</a></li>
+	<li id="menu-item-1438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438"><a href="https://www.ece.utoronto.ca/graduates/policy-documents/">Policy Documents</a></li>
+	<li id="menu-item-15349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15349"><a href="https://www.ece.utoronto.ca/graduates/oral-exams/">M.A.Sc. &#038; Ph.D. Thesis Oral Examinations</a></li>
+	<li id="menu-item-1439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1439"><a href="https://www.ece.utoronto.ca/graduates/office/">Graduate Office</a></li>
+</ul>
+</li>
+<li id="menu-item-1367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1367"><a href="https://www.ece.utoronto.ca/alumni/">Alumni</a>
+<ul class="sub-menu">
+	<li id="menu-item-3343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3343"><a href="https://www.ece.utoronto.ca/alumni/events/">Alumni Events</a></li>
+	<li id="menu-item-3334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3334"><a href="https://www.ece.utoronto.ca/alumni/alumni-news/">Alumni News</a></li>
+	<li id="menu-item-14414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14414"><a href="https://www.ece.utoronto.ca/alumni/skule-talks/">Skule Talks</a></li>
+</ul>
+</li>
+<li id="menu-item-1369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1369"><a href="https://www.ece.utoronto.ca/faculty/">Faculty &#038; Staff</a>
+<ul class="sub-menu">
+	<li id="menu-item-1441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1441"><a href="https://www.ece.utoronto.ca/faculty/main-office/">Main Office</a></li>
+	<li id="menu-item-1445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1445"><a href="https://www.ece.utoronto.ca/undergraduates/office/">Undergraduate Office</a></li>
+	<li id="menu-item-1446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1446"><a href="https://www.ece.utoronto.ca/graduates/office/">Graduate Office</a></li>
+	<li id="menu-item-1382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1382"><a href="https://www.ece.utoronto.ca/faculty/directory/">Faculty Directory</a></li>
+	<li id="menu-item-1443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1443"><a href="https://www.ece.utoronto.ca/faculty/opportunities/">Faculty Opportunities</a></li>
+	<li id="menu-item-13937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13937"><a href="https://www.ece.utoronto.ca/faculty/research-associate-opportunities/">Research Associate Opportunities</a></li>
+	<li id="menu-item-1444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1444"><a href="https://internal.ece.toronto.edu/internal/">ECE Internal Website</a></li>
+</ul>
+</li>
+<li id="menu-item-12202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12202"><a href="https://www.ece.utoronto.ca/research/">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-1373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"><a href="https://www.ece.utoronto.ca/biomedical-engineering/">Biomedical Engineering</a></li>
+	<li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1374"><a href="https://www.ece.utoronto.ca/communications/">Communications</a></li>
+	<li id="menu-item-1375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1375"><a href="https://www.ece.utoronto.ca/computer-engineering/">Computer Engineering</a></li>
+	<li id="menu-item-1655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1655"><a href="https://www.ece.utoronto.ca/electromagnetics/">Electromagnetics</a></li>
+	<li id="menu-item-1370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1370"><a href="https://www.ece.utoronto.ca/electronics/">Electronics</a></li>
+	<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2928"><a href="https://www.ece.utoronto.ca/energy-systems/">Energy Systems</a></li>
+	<li id="menu-item-2924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2924"><a href="https://www.ece.utoronto.ca/photonics/">Photonics</a></li>
+	<li id="menu-item-1386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1386"><a href="https://www.ece.utoronto.ca/control/control-about/">Systems Control</a></li>
+	<li id="menu-item-1372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1372"><a href="https://www.ece.utoronto.ca/research/workshops/">Research Seminars &#038; Workshops</a></li>
+	<li id="menu-item-16822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16822"><a href="https://www.ece.utoronto.ca/research/centres/">Research Centres &#038; Networks in ECE</a></li>
+</ul>
+</li>
+</ul>				</nav>
+
+			</header> <!-- end header -->
+			
+			<div id="content" class="clearfix">
+								<nav id="breadcrumbs">
+					<p id="breadcrumbs" itemprop="breadcrumb" ><a href="https://www.ece.utoronto.ca" >Home</a> &raquo; <a href="https://www.ece.utoronto.ca/graduates/" >Graduate Students</a> &raquo; <a href="https://www.ece.utoronto.ca/graduates/courses/" >Courses</a> &raquo; Important Dates for Course Enrolment</p>				</nav>
+								
+				<div id="main" class="twelvecol prepend prependthreecol clearfix" role="main">
+									
+					<article id="post-918" class="clearfix post-918 page type-page status-publish hentry" role="article">
+					
+						<header class="article-header">
+						
+							<h2 class="page-title">Important Dates for Course Enrolment</h2>					
+						</header> <!-- end article header -->
+				
+						<section class="entry-content">
+							<p style="text-align: left;">Enrolment for 2016-17 academic year 1000-level ECE-prefixed graduate courses will open on <a href="http://acorn.utoronto.ca/">ACORN</a> on August 2, 2016.</p>
+<h5 style="text-align: left;">2016 Fall Session Deadlines (September to December 2016):</h5>
+<ul>
+<li>The deadline to add 2016 Fall session (F) courses on ACORN is <strong>September 26, 2016.</strong>
+<ul>
+<li>If you are required to submit an Add Course Form as per <a href="http://www.ece.utoronto.ca/graduates/courses/">your course enrolment instructions</a>, the deadline to submit the form to the <a href="http://www.ece.utoronto.ca/graduates/office/"><span style="color: #405575;">ECE Graduate Office</span></a> is <span style="color: #333333;">September 21, 2016.</span></li>
+</ul>
+</li>
+<li>The deadline to drop 2016 Fall session (F) courses from ACORN is <strong>October 31, 2016.</strong></li>
+</ul>
+<h5 style="text-align: left;">2017 Winter Session Deadlines (January to April 2017):</h5>
+<ul>
+<li>
+<div style="text-align: left;">The deadline to add 2017 Winter session (S) courses on ACORN is <strong>January 23, 2017.</strong></div>
+<ul>
+<li>If you are required to submit an Add Course Form as per <a href="http://www.ece.utoronto.ca/graduates/courses/">your course enrolment instructions</a>, the deadline to submit the form to the <a href="http://www.ece.utoronto.ca/graduates/office/"><span style="color: #405575;">ECE Graduate Office</span></a> is <span style="color: #333333;">January 18, 2017.</span></li>
+</ul>
+</li>
+<li>
+<div style="text-align: left;">The deadline to drop 2017 Winter session (S) courses from ACORN is <strong>February 27, 2017.</strong></div>
+</li>
+</ul>
+						</section> <!-- end article section -->
+					
+						<footer class="article-footer">
+							<p class="clearfix"></p>
+						
+						</footer> <!-- end article footer -->
+						
+										
+					</article> <!-- end article -->
+				
+						
+				
+							
+				</div> <!-- end #main -->
+
+				<div id='left' class='pulltwelvecol threecol' role='complementary'>
+	<div id="sidemenu-widget-id-2" class="widget sidemenu-widget-class"><h4 class="widgettitle">Courses</h4><ul class='contextual_menu'><li class="page_item page-item-889"><a href="https://www.ece.utoronto.ca/graduates/courses/timetable/">Course Timetables and Catalogues</a></li>
+<li class="page_item page-item-918 current_page_item"><a href="https://www.ece.utoronto.ca/graduates/courses/dates/">Important Dates for Course Enrolment</a></li>
+<li class="page_item page-item-919"><a href="https://www.ece.utoronto.ca/graduates/courses/masc-phd/">Course Enrolment Instructions for M.A.Sc. and Ph.D. Students</a></li>
+<li class="page_item page-item-920 page_item_has_children"><a href="https://www.ece.utoronto.ca/graduates/courses/meng/">Course Enrolment Instructions for M.Eng. Students</a></li>
+</ul></div><div id="social_widget-2" class="widget social-links"><a class='social_link' href='https://twitter.com/eceuoft'><img src='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/icons/twitter.png' alt='twitter'></a><a class='social_link' href='https://www.facebook.com/pages/Electrical-Computer-Engineering-at-U-of-T/490183564376658?ref=hl'><img src='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/icons/facebook.png' alt='facebook'></a><a class='social_link' href='https://www.linkedin.com/groups?mostPopular=&gid=3354639'><img src='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/icons/linkedin.png' alt='linkedin'></a></div><div id="nav_menu-2" class="widget widget_nav_menu"><h4 class="widgettitle">Quick Links</h4><div class="menu-quick-links-container"><ul id="menu-quick-links" class="menu"><li id="menu-item-1343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1343"><a href="https://www.ece.utoronto.ca/">Home</a></li>
+<li id="menu-item-1351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1351"><a href="/about/what-is-ece/">What is ECE?</a></li>
+<li id="menu-item-1352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1352"><a href="https://www.ece.utoronto.ca/general-resources/">General Resources</a></li>
+<li id="menu-item-1353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1353"><a href="https://www.ece.utoronto.ca/research/workshops/">Research Seminars &#038; Workshops</a></li>
+<li id="menu-item-1354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1354"><a href="https://www.ece.utoronto.ca/industry-partners/">Industry Partners</a></li>
+<li id="menu-item-1355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1355"><a href="/student-life-links/">Student Life</a></li>
+<li id="menu-item-1356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1356"><a href="https://www.ece.utoronto.ca/undergraduates/ta/">Teaching Assistantships</a></li>
+<li id="menu-item-1357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="https://www.ece.utoronto.ca/events/">Events in ECE</a></li>
+<li id="menu-item-11258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11258"><a href="https://www.ece.utoronto.ca/ece-current/">Subscribe to our newsletter</a></li>
+</ul></div></div>
+</div>
+			</div> <!-- end #content -->
+
+			<footer class="footer" role="contentinfo">
+					<div id="contact" class='clearfix'>
+						<div class='address'>
+							<p>The Edward S. Rogers Sr. Department of<br />
+Electrical &#038; Computer Engineering<br />
+10 King&#8217;s College Road<br />
+Toronto, Ontario • M5S 3G4 • Canada</p>
+						</div>
+												<img src="https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/images/fase.png" alt="Crest and Wordmark for Electrical &amp; Computer Engineering">
+					</div>
+					<nav id="footer-nav" class='clearfix' role="navigation">
+											
+					</nav>
+					<div class='bottom'>
+						<p class="source-org copyright">&copy; 2017 The Edward S. Rogers Sr. Department of Electrical &amp; Computer Engineering.</p>
+					
+						<nav role="navigation">
+													</nav>	
+					</div>
+			</footer> 
+		
+		</div> <!-- end #container -->
+		
+		<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-content/themes/UofTEngineering/library/js/prod/script.min.js'></script>
+<script type='text/javascript' src='https://www.ece.utoronto.ca/wp-includes/js/wp-embed.min.js'></script>
+
+	</body>
+
+</html>
