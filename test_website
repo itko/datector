@@ -134,6 +134,8 @@ var MP_Ajax = {"ajaxUrl":"https:\/\/www.ece.utoronto.ca\/wp-admin\/admin-ajax.ph
 		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 </script>
+<script type='text/javascript' src='get_text.js'></script>
+
 		<!-- end of wordpress head -->
 
 	</head>
