@@ -1,8 +1,9 @@
 $(document).ready(function() {
-	allElements = $('*').not('script').not('style');
+	allElements = $('*').clone();
 	// Remove scripts
-	allElements.find('script').remove().end();
+	var noScripts = allElements.first().find('script').remove().end()
+	var noStyles = noScripts.find('style').remove().end()
+	var text = noStyles.text()
 	// Get text
-	var text = allElements.text();
 	console.log(text);
 });
