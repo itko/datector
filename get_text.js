@@ -1,9 +1,15 @@
-$(document).ready(function() {
-	allElements = $('*').clone();
+function get_text(jquery_object) {
 	// Remove scripts
-	var noScripts = allElements.first().find('script').remove().end()
+	var noScripts = jquery_object.first().find('script').remove().end()
 	var noStyles = noScripts.find('style').remove().end()
 	var text = noStyles.text()
-	// Get text
-	console.log(text);
+	return text
+}
+
+
+
+jQuery(document).ready(function() {
+	allElements = jQuery('*').clone();
+	text = get_text(allElements)
+	console.log(text)
 });
