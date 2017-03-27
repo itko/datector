@@ -1,3 +1,10 @@
+// Get the innermost element that contains a given string
+function getElementsContainingText(textString) {
+	selector = ':contains(' + textString + '):not(:has(*))'
+	elements = $(selector)
+	return elements
+}
+
 // Takes a jquery object and returns all text inside
 // (excluding scripts and styles text)
 function get_text(object) {
@@ -18,15 +25,16 @@ function insert_link(object, string, url) {
 	// Create a link element out of the url
 	var link = '<a href="' + url + '">' + string + '</a>'
 	// Replace string with the link element
-	object.html(object.html().replace(/February/ig,link));
 	console.log(object.html());
-	// object.html(html);
-
+	newhtml = object.html().replace(regex,link);
+	console.log(newhtml);
+	object.html(newhtml);
+	console.log(object.html());
 }
 
 jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
-	console.log(text);
-	insert_link(allElements.find('body'), 'February', 'http://google.com')
+	dateElements = getElementsContainingText('February')
+	insert_link(dateElements, 'February', 'http://google.com')
 });
