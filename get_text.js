@@ -13,11 +13,13 @@ function get_text(object) {
 // Replaces a given string in an object with a url
 // (with the string as the link text)
 function insert_link(object, string, url) {
-	searchString = '/'+string+'/ig'
-	alert(searchString)
-	alert(url)
-	var html = object.html().replace(searchString,url);
-	console.log(html);
+	// Convert string to a regular expression
+	var regex = new RegExp(string,"ig")
+	// Create a link element out of the url
+	var link = '<a href="' + url + '">' + string + '</a>'
+	// Replace string with the link element
+	object.html(object.html().replace(/February/ig,link));
+	console.log(object.html());
 	// object.html(html);
 
 }
@@ -26,5 +28,5 @@ jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	console.log(text);
-	insert_link(allElements.find('body'), 'February', 'Google')
+	insert_link(allElements.find('body'), 'February', 'http://google.com')
 });
