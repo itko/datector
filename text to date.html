@@ -1,0 +1,69 @@
+<html>
+<head><title>Find the Date</title></head>
+<body>
+<script language="Javascript">
+/*************************************************************
+	Name: Anatoly Makarov
+	Date: 
+*************************************************************/
+
+
+/*function output1(x){
+
+	var matchTxt1 = x.match(/[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g)
+	var matchTxt2 = x.match(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi)
+	var index1 = x.search(/[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g)
+	var index2 = x.search(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi)
+	//[0-9][0-9]
+
+	outText.outTextbox.value=matchTxt1 + "," + matchTxt2 + "   " + index1 + "," + index2
+	
+}*/
+function output(x){
+	var regExList = new Array()
+	regExList[0] = /[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g
+	regExList[1] = /(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi
+	regExList[2] = /(today|tomorrow|tonight|afternoon)/gi
+	
+	
+	var mIndex = 0
+	var match = new Array()
+	var matchLoc = new Array()
+	for (var i = 0; i < regExList.length-1; i++){
+		var tmpString = x
+		var tmpMatch = new Array()
+		var k = 0
+		while(tmpMatch[k] = regExList[i].exec(tmpString)){
+		
+			match[mIndex] = tmpMatch[k][0]
+			matchLoc[mIndex] = tmpMatch[k].index
+			
+			//console.log(tmpMatch[k])
+			mIndex++
+			k++
+		}
+		
+		
+	}
+	var outString = ""
+	for (var i = 0; i < match.length-1; i++){
+		outString = outString + "Index: " + matchLoc[i] + " Match: " + match[i] + "\n"
+	}
+	
+	outText.outTextbox.value=outString
+	
+}
+
+</script>
+<center><h1>Find the Date</h1></center>
+<center><form name="inText">
+Text:<br><textarea cols=70 rows=5 name="inputTextbox">ewrw34/56/67/sdsewrw 31-22-11 /sdsa Can you do this monday and maybe Saturday or Sunday?</textarea><br>
+<br>
+<input type="button" value="Find" onClick="output(inText.inputTextbox.value)"><br>
+
+</form>
+<form name="outText">
+Dates:<br><textarea cols=70 rows=5 name="outTextbox" readonly></textarea><br>
+</form></center>
+</body>
+</html>
