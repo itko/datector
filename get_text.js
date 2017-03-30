@@ -25,11 +25,8 @@ function insert_link(object, string, url) {
 	// Create a link element out of the url
 	var link = '<a href="' + url + '">' + string + '</a>'
 	// Replace string with the link element
-	console.log(object.html());
 	newhtml = object.html().replace(regex,link);
-	console.log(newhtml);
 	object.html(newhtml);
-	console.log(object.html());
 }
 
 jQuery(document).ready(function() {
