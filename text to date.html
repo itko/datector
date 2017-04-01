@@ -1,6 +1,8 @@
 <html>
 <head><title>Find the Date</title></head>
 <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="text_to_date.js"></script>
 <script language="Javascript">
 /*************************************************************
@@ -8,27 +10,44 @@
 	Date: 
 *************************************************************/
 
+
 function dateMatch(){
 	this.value = new Array()
 	this.index = new Array()
 }
 
+$(document).ready(function(){
+    $(":button").click(function(){
+		//alert("G")
+        var x = $("#inTXT").text();
+		//alert(x);
+		var match1 = new dateMatch();
+		match1 = output(x);
+	
+		var outString = "";
+		for (var i = 0; i < match1.index.length-1; i++){
+			outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + "\n";
+		}
+        $("#outTXT").text(outString);
+    });
+});
+
 function output2(x){
 	var match = new dateMatch()
-	match.value[0] = "1"
-	match.index[0] = "2"
-	alert(match.value[0])
-	alert(match.index[0])
+	match.value[0] = "1";
+	match.index[0] = "2";
+	alert(match.value[0]);
+	alert(match.index[0]);
 
 }
 function call1(x){
-	var match1 = new dateMatch()
-	match1 = output(x)
+	var match1 = new dateMatch();
+	match1 = output(x);
 	
-	var outString = ""
+	var outString = "";
 	for (var i = 0; i < match1.index.length-1; i++){
-		outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + "\n"
-	}
+		outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + "\n";
+	};
 	outText.outTextbox.value=outString
 	
 }
@@ -59,20 +78,19 @@ function output(x){
 		
 	}
 	return match
-	
+	//alert("S")
 	
 }
-
 </script>
 <center><h1>Find the Date</h1></center>
 <center><form name="inText">
-Text:<br><textarea cols=70 rows=5 name="inputTextbox">ewrw34/56/67/sdsewrw 31-22-11 /sdsa Can you do this monday and maybe Saturday or Sunday?</textarea><br>
+Text:<br><textarea cols=70 rows=5 id="inTXT">ewrw34/56/67/sdsewrw 31-22-11 /sdsa Can you do this monday and maybe Saturday or Sunday?</textarea><br>
 <br>
-<input type="button" value="Find" onClick="call1(inText.inputTextbox.value)"><br>
+<input type="button" value="Find"><br>
 
 </form>
 <form name="outText">
-Dates:<br><textarea cols=70 rows=5 name="outTextbox" readonly></textarea><br>
+Dates:<br><textarea cols=70 rows=5 id="outTXT" readonly></textarea><br>
 </form></center>
 </body>
 </html>
