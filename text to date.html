@@ -32,25 +32,6 @@ $(document).ready(function(){
     });
 });
 
-function output2(x){
-	var match = new dateMatch()
-	match.value[0] = "1";
-	match.index[0] = "2";
-	alert(match.value[0]);
-	alert(match.index[0]);
-
-}
-function call1(x){
-	var match1 = new dateMatch();
-	match1 = output(x);
-	
-	var outString = "";
-	for (var i = 0; i < match1.index.length-1; i++){
-		outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + "\n";
-	};
-	outText.outTextbox.value=outString
-	
-}
 
 function output(x){
 	var regExList = new Array()
