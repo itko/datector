@@ -1,24 +1,38 @@
 <html>
 <head><title>Find the Date</title></head>
 <body>
+<script src="text_to_date.js"></script>
 <script language="Javascript">
 /*************************************************************
 	Name: Anatoly Makarov
 	Date: 
 *************************************************************/
 
+function dateMatch(){
+	this.value = new Array()
+	this.index = new Array()
+}
 
-/*function output1(x){
+function output2(x){
+	var match = new dateMatch()
+	match.value[0] = "1"
+	match.index[0] = "2"
+	alert(match.value[0])
+	alert(match.index[0])
 
-	var matchTxt1 = x.match(/[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g)
-	var matchTxt2 = x.match(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi)
-	var index1 = x.search(/[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g)
-	var index2 = x.search(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi)
-	//[0-9][0-9]
-
-	outText.outTextbox.value=matchTxt1 + "," + matchTxt2 + "   " + index1 + "," + index2
+}
+function call1(x){
+	var match1 = new dateMatch()
+	match1 = output(x)
 	
-}*/
+	var outString = ""
+	for (var i = 0; i < match1.index.length-1; i++){
+		outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + "\n"
+	}
+	outText.outTextbox.value=outString
+	
+}
+
 function output(x){
 	var regExList = new Array()
 	regExList[0] = /[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g
@@ -27,16 +41,15 @@ function output(x){
 	
 	
 	var mIndex = 0
-	var match = new Array()
-	var matchLoc = new Array()
+	var match = new dateMatch()
 	for (var i = 0; i < regExList.length-1; i++){
 		var tmpString = x
 		var tmpMatch = new Array()
 		var k = 0
 		while(tmpMatch[k] = regExList[i].exec(tmpString)){
 		
-			match[mIndex] = tmpMatch[k][0]
-			matchLoc[mIndex] = tmpMatch[k].index
+			match.value[mIndex] = tmpMatch[k][0]
+			match.index[mIndex] = tmpMatch[k].index
 			
 			//console.log(tmpMatch[k])
 			mIndex++
@@ -45,12 +58,8 @@ function output(x){
 		
 		
 	}
-	var outString = ""
-	for (var i = 0; i < match.length-1; i++){
-		outString = outString + "Index: " + matchLoc[i] + " Match: " + match[i] + "\n"
-	}
+	return match
 	
-	outText.outTextbox.value=outString
 	
 }
 
@@ -59,7 +68,7 @@ function output(x){
 <center><form name="inText">
 Text:<br><textarea cols=70 rows=5 name="inputTextbox">ewrw34/56/67/sdsewrw 31-22-11 /sdsa Can you do this monday and maybe Saturday or Sunday?</textarea><br>
 <br>
-<input type="button" value="Find" onClick="output(inText.inputTextbox.value)"><br>
+<input type="button" value="Find" onClick="call1(inText.inputTextbox.value)"><br>
 
 </form>
 <form name="outText">
