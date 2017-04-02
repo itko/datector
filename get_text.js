@@ -1,3 +1,20 @@
+
+// Event class to store info related to events
+var Event = function(day,month,year,hour,minute) {
+	this.day = day
+	this.month = month
+	this.year = year
+	this.hour = hour
+	this.minute = minute
+}
+
+// Public method to convert to a url
+Event.prototype.createGoogleCalendarUrl() = function() {
+	var url = null
+	// Insert url code here
+	return url
+}
+
 // Get the innermost element that contains a given string
 function getElementsContainingText(textString) {
 	selector = ':contains(' + textString + '):not(:has(:contains(' + textString + ')))'
