@@ -9,7 +9,7 @@ var Event = function(day,month,year,hour,minute) {
 }
 
 // Public method to convert to a url
-Event.prototype.createGoogleCalendarUrl() = function() {
+Event.prototype.createGoogleCalendarUrl = function() {
 	var url = null
 	// Insert url code here
 	return url
