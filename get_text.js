@@ -1,4 +1,3 @@
-
 // Event class to store info related to events
 var Event = function(day,month,year,hour,minute) {
 	this.day = day
@@ -50,5 +49,10 @@ jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	dateElements = getElementsContainingText('April')
-	insert_link(dateElements, 'April', 'http://google.com')
+	// Check if there are any elements
+	// Insert link in with the given text
+	if (dateElements.length) {	
+		insert_link(dateElements, 'April', 'http://google.com')
+	}
 });
+
