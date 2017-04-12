@@ -12,20 +12,25 @@ $(document).ready(function(){
 		//alert(x);
 		
 		var match1 = main(x);
+		//alert("hi")
 	
 		var outString = "";
 		for (var i = 0; i <= match1.index.length-1; i++){
-			//outString = outString + "Index: " + match1.index[i] + " Match: " + match1.value[i] + " RegEx: " + match1.regExType[i] + "\n";
-			outString = outString + "Index: " + match1.index[i] + " Match: " + match1.string[i] + " All match: " + match1.allStrings[i] + "\n";
+			var fDate = match1.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(match1.date[i], '%Y-%m-%d')
+			
+			//outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + fDate + "\n";
+			outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + match1.date[i].mindex + "\n";
 		}
+		
         $("#outTXT").val(outString);
     });
 });
 function main(x){
 	var match = parseDatesFromString(x)
 	var strToLinks = getStringsToLinks(match)
+	var dateParse = keywordsToDate(strToLinks)
 	
-	return strToLinks
+	return dateParse
 }
 
 
@@ -79,12 +84,20 @@ function getStringsToLinks(match){
 function keywordsToDate(strToLinks){
 	
 	//look into JodaTime
+	
+	var dateParse = {string: new Array(), index: new Array(), allStrings: new Array(), date: new Array()}
 	for (var i = 0; i <= strToLinks.index.length-1; i++){
 		
+		dateParse.string[i] = strToLinks.string[i]
+		dateParse.index[i] = strToLinks.index[i]
+		dateParse.allStrings[i] = strToLinks.allStrings[i]
+		dateParse.date[i] = new Sugar.Date(strToLinks.allStrings[i])
 		
 		
 		
 	}
+	//alert(dateParse.date[2])
+	return dateParse
 }
 
 
