@@ -1,3 +1,9 @@
+// Modify Number object to allow padding
+Number.prototype.pad = function(numDigits) {
+    var s = String(this);
+    while (s.length < (numDigits || 2)) {s = "0" + s;}
+    return s;
+}
 
 // Event class to store info related to events
 var Event = function(day,month,year,hour,minute) {
@@ -10,8 +16,14 @@ var Event = function(day,month,year,hour,minute) {
 
 // Public method to convert to a url
 Event.prototype.createGoogleCalendarUrl = function() {
-	var url = null
-	// Insert url code here
+	// Start with base url
+	var url = 'https://www.google.com/calendar/event?action=TEMPLATE'
+	// Add start datetime
+	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T' + this.hour.pad(2) + this.minute.pad(2) + '00Z'
+	console.log(start)
+	// No length
+	dates=start+'/'+start
+	url = url + '&' + 'dates=' + dates
 	return url
 }
 
@@ -50,5 +62,12 @@ jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	dateElements = getElementsContainingText('April')
-	insert_link(dateElements, 'April', 'http://google.com')
+	// Check if there are any elements
+	if (dateElements.length) {
+		// Get the url
+		dummyEvent = new Event(6,5,2017,20,35);
+		url = dummyEvent.createGoogleCalendarUrl();
+		// Insert link in with the given text
+		insert_link(dateElements, 'April', url)
+	}
 });
