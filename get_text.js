@@ -58,16 +58,108 @@ function insert_link(object, string, url) {
 	object.html(newhtml);
 }
 
+
+
+
+function parseDatesFromString(x){
+	var regExList = new Array()
+	regExList[0] = /[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g
+	regExList[1] = /(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi
+	regExList[2] = /(today|tomorrow|tonight|afternoon)/gi
+	
+	
+	var mIndex = 0
+	//var match = new dateMatch()
+	var match = {value: new Array(), index: new Array(), regExType: new Array()}
+	for (var i = 0; i <= regExList.length-1; i++){
+		var tmpString = x
+		var tmpMatch = new Array()
+		var k = 0
+		while(tmpMatch[k] = regExList[i].exec(tmpString)){
+		
+			match.value[mIndex] = tmpMatch[k][0]
+			match.index[mIndex] = tmpMatch[k].index
+			match.regExType[mIndex] = i
+			
+			//console.log(tmpMatch[k])
+			mIndex++
+			k++
+		}
+		
+	}
+	return match
+	//alert("S")
+}
+
+function getStringsToLinks(match){
+	
+	var strToLinks = {string: new Array(), index: new Array(), allStrings: new Array()}
+	
+	for (var i = 0; i <= match.index.length-1; i++){
+		strToLinks.string[i] = match.value[i]
+		strToLinks.index[i] = match.index[i]
+		strToLinks.allStrings[i] = match.value[i] //need to modify in future. Values separated by "|". ex. "saturday|tomorrow|3pm"
+	}
+	
+	
+	return strToLinks
+	
+}
+
+function keywordsToDate(strToLinks){
+	
+	//look into JodaTime
+	
+	var dateParse = {string: new Array(), index: new Array(), allStrings: new Array(), date: new Array()}
+	for (var i = 0; i <= strToLinks.index.length-1; i++){
+		
+		dateParse.string[i] = strToLinks.string[i]
+		dateParse.index[i] = strToLinks.index[i]
+		dateParse.allStrings[i] = strToLinks.allStrings[i]
+		dateParse.date[i] = new Sugar.Date(strToLinks.allStrings[i])
+		
+		
+		
+	}
+	//alert(dateParse.date[2])
+	return dateParse
+}
+
+
 jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
-	dateElements = getElementsContainingText('April')
-	// Check if there are any elements
-	if (dateElements.length) {
-		// Get the url
-		dummyEvent = new Event(6,5,2017,20,35);
-		url = dummyEvent.createGoogleCalendarUrl();
-		// Insert link in with the given text
-		insert_link(dateElements, 'April', url)
+	var match = parseDatesFromString(text)
+	var strToLinks = getStringsToLinks(match)
+	var dateParse = keywordsToDate(strToLinks)
+	for (var i = 0; i <= dateParse.index.length-1; i++){
+		dateElements = getElementsContainingText(dateParse.string[i])
+		var day = parseInt(dateParse.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(dateParse.date[i], '%d'))
+		//alert (day)
+		var month = parseInt(dateParse.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(dateParse.date[i], '%m'))
+		var year = parseInt(dateParse.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(dateParse.date[i], '%Y'))
+		var hour = parseInt(dateParse.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(dateParse.date[i], '%H'))
+		var minute = parseInt(dateParse.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(dateParse.date[i], '%M'))
+		// Check if there are any elements
+		if (dateElements.length) {
+			// Get the url
+			//dummyEvent = new Event(6,5,2017,20,35);
+			dummyEvent = new Event(day, month, year, hour, minute);
+			url = dummyEvent.createGoogleCalendarUrl();
+			// Insert link in with the given text
+			insert_link(dateElements, dateParse.string[i], url)
+		}
 	}
 });
+
+
+
+
+
+
+
+
+
+
+
+

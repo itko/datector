@@ -17,7 +17,7 @@
     {
       "matches": ["http://*/*","https://*/*"],
       "exclude_matches": ["https://*.google.com/*"],
-      "js": ["jquery-3.2.0.min.js","get_text.js"]
+      "js": ["jquery-3.2.0.min.js","sugar.js","get_text.js"]
     }
   ]
 }
