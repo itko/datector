@@ -18,8 +18,8 @@ $(document).ready(function(){
 		for (var i = 0; i <= match1.index.length-1; i++){
 			var fDate = match1.date[i].raw == "Invalid Date" ? "Invalid Date" : Sugar.Date.format(match1.date[i], '%Y-%m-%d')
 			
-			//outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + fDate + "\n";
-			outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + match1.date[i].mindex + "\n";
+			outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + fDate + "\n";
+			//outString = outString + "Index: " + match1.index[i] + " Match: " + match1.allStrings[i] + " Date: " + match1.date[i].mindex + "\n";
 		}
 		
         $("#outTXT").val(outString);
