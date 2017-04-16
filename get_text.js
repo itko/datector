@@ -127,6 +127,8 @@ function keywordsToDate(strToLinks){
 
 
 jQuery(document).ready(function() {
+	results = chrono.parse("Hey Paul, can we meet tomorrow from 4pm to 10pm");
+	console.log(results[0])
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	var match = parseDatesFromString(text)
