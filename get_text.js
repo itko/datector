@@ -37,6 +37,7 @@ var Event = function(string) {
 			this.hour = start.getHours();
 			this.minute = start.getMinutes();
 		}
+		// TODO add something for this
 		if (parsed.end) {
 			var end = parsed.end.date()
 		}
@@ -52,7 +53,7 @@ Event.prototype.createGoogleCalendarUrl = function() {
 	// Add start datetime
 	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T'
 			+ this.hour.pad(2) + this.minute.pad(2) + '00Z'
-	// No length
+	// TODO No end for now
 	dates = start + '/' + start
 	url = url + '&' + 'dates=' + dates
 	return url
@@ -184,12 +185,15 @@ jQuery(document).ready(function() {
 	var strToLinks = getStringsToLinks(match)
 	var dateParse = keywordsToDate(strToLinks)
 	for (var i = 0; i < dateParse.index.length; i++) {
+		// Get all elements that contain the string
 		dateElements = getElementsContainingText(dateParse.string[i])
 		// Check if there are any elements
 		if (dateElements.length) {
+			// Create an event with the given string
 			event = new Event(dateParse.string[i]);
+			// Get the google url
 			url = event.createGoogleCalendarUrl();
-			// Insert link in with the given text
+			// Insert link
 			insert_link(dateElements, dateParse.string[i], url)
 		}
 	}
