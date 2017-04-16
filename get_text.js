@@ -188,7 +188,6 @@ jQuery(document).ready(function() {
 		// Check if there are any elements
 		if (dateElements.length) {
 			event = new Event(dateParse.string[i]);
-			console.log(event)
 			url = event.createGoogleCalendarUrl();
 			// Insert link in with the given text
 			insert_link(dateElements, dateParse.string[i], url)
