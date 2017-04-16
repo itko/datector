@@ -6,12 +6,30 @@ Number.prototype.pad = function(numDigits) {
 }
 
 // Event class to store info related to events
-var Event = function(day,month,year,hour,minute) {
-	this.day = day
-	this.month = month
-	this.year = year
-	this.hour = hour
-	this.minute = minute
+//var Event = function(string) {
+//	var now = new Date();
+//	var parsed = chrono.parse(string)[0]
+//	if (parsed) {
+//		if (parsed.start) {
+//			var start = parsed.start.date()
+//			this.day = start.getDate();
+//			this.month = start.getMonth();
+//			this.year = start.getYear();
+//			this.hour = start.getHours();
+//			this.minute =  start.getMinutes();
+//		}
+//		if (parsed.end) {
+//			var end = parsed.end.date()
+//		}
+//	}
+//}
+
+var Event = function(day,month,year,hour,minute) { 
+	  this.day = day 
+	  this.month = month 
+	  this.year = year 
+	  this.hour = hour 
+	  this.minute = minute 
 }
 
 // Public method to convert to a url
@@ -127,8 +145,9 @@ function keywordsToDate(strToLinks){
 
 
 jQuery(document).ready(function() {
-	results = chrono.parse("Hey Paul, can we meet tomorrow from 4pm to 10pm");
-	console.log(results[0])
+//	myEvent = new Event("tomorrow")
+//	url = myEvent.createGoogleCalendarUrl();
+//	console.log(url)
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	var match = parseDatesFromString(text)
