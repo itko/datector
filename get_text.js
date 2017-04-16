@@ -1,4 +1,6 @@
-// Modify Number object to allow padding
+/*
+ * Modify Number object to allow adding leading zeros to numbers. Returns a string!
+ */
 Number.prototype.pad = function(numDigits) {
 	var s = String(this);
 	while (s.length < (numDigits || 2)) {
@@ -7,11 +9,27 @@ Number.prototype.pad = function(numDigits) {
 	return s;
 }
 
+/*
+ * Event class. Takes a string and parses it into the day month, etc. For now it
+ * doesn't support end dates, but that can easily be done. If the input string
+ * cannot be parsed into a date, today's date is used.
+ */
 var Event = function(string) {
+	// Use the datetime that's right now (in case the string doesn't contain a
+	// date)
 	var now = new Date();
+	this.day = now.getDate();
+	this.month = now.getMonth();
+	this.year = now.getFullYear();
+	this.hour = now.getHours();
+	this.minute = now.getMinutes();
+	// Now parse the string
 	var parsed = chrono.parse(string)[0]
+	// Check if a date was found in the string
 	if (parsed) {
+		// Check if there's a start date
 		if (parsed.start) {
+			// Use the parsed values
 			var start = parsed.start.date()
 			this.day = start.getDate();
 			this.month = start.getMonth();
@@ -25,19 +43,26 @@ var Event = function(string) {
 	}
 }
 
-// Public method to convert to a url
+/*
+ * Public method. Returns a url that adds the event info to google calendar
+ */
 Event.prototype.createGoogleCalendarUrl = function() {
 	// Start with base url
 	var url = 'https://www.google.com/calendar/event?action=TEMPLATE'
 	// Add start datetime
-	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T' + this.hour.pad(2) + this.minute.pad(2) + '00Z'
+	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T'
+			+ this.hour.pad(2) + this.minute.pad(2) + '00Z'
 	// No length
 	dates = start + '/' + start
 	url = url + '&' + 'dates=' + dates
 	return url
 }
 
-// Get the innermost element that contains a given string
+/*
+ * Get the innermost element that contains a given string. Takes in a string and
+ * returns an array of jquery elements that contain it. TODO if the outer
+ * element also contains the string, it is disregarded. This needs to be fixed.
+ */
 function getElementsContainingText(textString) {
 	selector = ':contains(' + textString + '):not(:has(:contains(' + textString
 			+ ')))'
@@ -45,8 +70,11 @@ function getElementsContainingText(textString) {
 	return elements
 }
 
-// Takes a jquery object and returns all text inside
-// (excluding scripts and styles text)
+/*
+ * Takes a jquery object and returns all text inside. This is better than using
+ * the text() featur eof jQuery because it removes repeated text and
+ * script/styles text
+ */
 function get_text(object) {
 	// Clone
 	objectClone = object.clone();
@@ -57,8 +85,10 @@ function get_text(object) {
 	return text
 }
 
-// Replaces a given string in an object with a url
-// (with the string as the link text)
+/*
+ * Takes a jquery object, string, and url and replaces thhe string in the text
+ * of that object with a link to the url (with the string as the link text)
+ */
 function insert_link(object, string, url) {
 	// Convert string to a regular expression
 	var regex = new RegExp(string, "ig")
