@@ -20,7 +20,6 @@ Event.prototype.createGoogleCalendarUrl = function() {
 	var url = 'https://www.google.com/calendar/event?action=TEMPLATE'
 	// Add start datetime
 	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T' + this.hour.pad(2) + this.minute.pad(2) + '00Z'
-	console.log(start)
 	// No length
 	dates=start+'/'+start
 	url = url + '&' + 'dates=' + dates
