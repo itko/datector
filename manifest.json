@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Datector",
+  "description": "This extension creates links out of dates listed on a website",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "exclude_matches": ["https://*.google.com/*"],
+      "js": ["jquery-3.2.0.min.js","sugar.js","get_text.js","chrono.min.js"]
+    }
+  ]
+}
