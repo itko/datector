@@ -177,8 +177,6 @@ function keywordsToDate(strToLinks) {
 }
 
 jQuery(document).ready(function() {
-	myEvent = new Event("tomorrow")
-	url = myEvent.createGoogleCalendarUrl();
 	allElements = jQuery('*');
 	text = get_text(allElements);
 	var match = parseDatesFromString(text)
