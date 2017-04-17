@@ -19,7 +19,7 @@ var Event = function(string) {
 	// date)
 	var now = new Date();
 	this.day = now.getDate();
-	this.month = now.getMonth();
+	this.month = now.getMonth() + 1; //month starts at 0. ex. April = 3
 	this.year = now.getFullYear();
 	this.hour = now.getHours();
 	this.minute = now.getMinutes();
@@ -31,11 +31,16 @@ var Event = function(string) {
 		if (parsed.start) {
 			// Use the parsed values
 			var start = parsed.start.date()
+			//alert (start)
 			this.day = start.getDate();
-			this.month = start.getMonth();
+			this.month = start.getMonth() + 1; //month starts at 0. ex. April = 3
 			this.year = start.getFullYear();
 			this.hour = start.getHours();
 			this.minute = start.getMinutes();
+			
+			
+			//alert (this.year)
+			
 		}
 		// TODO add something for this
 		if (parsed.end) {
@@ -100,7 +105,7 @@ function insert_link(object, string, url) {
 	object.html(newhtml);
 }
 
-function parseDatesFromString(x) {
+function getMatches(x) {
 	var regExList = new Array()
 	regExList[0] = /[0-9][0-9][/-][0-9][0-9][/-][0-9][0-9]/g
 	regExList[1] = /(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/gi
@@ -108,20 +113,14 @@ function parseDatesFromString(x) {
 
 	var mIndex = 0
 	// var match = new dateMatch()
-	var match = {
-		value : new Array(),
-		index : new Array(),
-		regExType : new Array()
-	}
+	var match =  new Array()
 	for (var i = 0; i <= regExList.length - 1; i++) {
 		var tmpString = x
 		var tmpMatch = new Array()
 		var k = 0
 		while (tmpMatch[k] = regExList[i].exec(tmpString)) {
 
-			match.value[mIndex] = tmpMatch[k][0]
-			match.index[mIndex] = tmpMatch[k].index
-			match.regExType[mIndex] = i
+			match[mIndex] = tmpMatch[k][0]
 
 			// console.log(tmpMatch[k])
 			mIndex++
@@ -129,70 +128,43 @@ function parseDatesFromString(x) {
 		}
 
 	}
-	return match
-	// alert("S")
+	
+	//remove duplicates from match
+	var uniqueMatches = [];
+	$.each(match, function(i, el){
+		if($.inArray(el, uniqueMatches) === -1) uniqueMatches.push(el);
+	});
+	
+	return uniqueMatches
 }
 
-function getStringsToLinks(match) {
-
-	var strToLinks = {
-		string : new Array(),
-		index : new Array(),
-		allStrings : new Array()
-	}
-
-	for (var i = 0; i <= match.index.length - 1; i++) {
-		strToLinks.string[i] = match.value[i]
-		strToLinks.index[i] = match.index[i]
-		strToLinks.allStrings[i] = match.value[i] // need to modify in future.
-		// Values separated by "|".
-		// ex.
-		// "saturday|tomorrow|3pm"
-	}
-
-	return strToLinks
-
-}
-
-function keywordsToDate(strToLinks) {
-
-	// look into JodaTime
-
-	var dateParse = {
-		string : new Array(),
-		index : new Array(),
-		allStrings : new Array(),
-		date : new Array()
-	}
-	for (var i = 0; i <= strToLinks.index.length - 1; i++) {
-
-		dateParse.string[i] = strToLinks.string[i]
-		dateParse.index[i] = strToLinks.index[i]
-		dateParse.allStrings[i] = strToLinks.allStrings[i]
-		dateParse.date[i] = new Sugar.Date(strToLinks.allStrings[i])
-
-	}
-	// alert(dateParse.date[2])
-	return dateParse
-}
 
 jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
-	var match = parseDatesFromString(text)
-	var strToLinks = getStringsToLinks(match)
-	var dateParse = keywordsToDate(strToLinks)
-	for (var i = 0; i < dateParse.index.length; i++) {
-		// Get all elements that contain the string
-		dateElements = getElementsContainingText(dateParse.string[i])
-		// Check if there are any elements
-		if (dateElements.length) {
-			// Create an event with the given string
-			event = new Event(dateParse.string[i]);
+	//get all unique "keywords" on the page
+	var match = getMatches(text)
+
+	//loop through all unique keywords
+	for (var i = 0; i < match.length; i++) {
+		// Get all elements that contain the unique keyword
+		dateElements = getElementsContainingText(match[i])
+		
+		//creating an array only to determine the number of elements for the next loop
+		var dateElementArray = jQuery.makeArray(dateElements)
+		//loop through all found elements
+		for (var j = 0; j < dateElementArray.length; j++){
+			
+			//get text of each element
+			var elemText = get_text(dateElements.eq(j))
+			// Create an event with the given element text
+			event = new Event(elemText);
 			// Get the google url
 			url = event.createGoogleCalendarUrl();
-			// Insert link
-			insert_link(dateElements, dateParse.string[i], url)
+			// Insert link into the keyword
+			insert_link(dateElements.eq(j), match[i], url)
+			
 		}
+		
 	}
 });
