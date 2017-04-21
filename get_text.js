@@ -24,7 +24,7 @@ var Event = function(string, index) {
 	this.year = now.getFullYear();
 	this.hour = now.getHours();
 	this.minute = now.getMinutes();
-	// Now parse the string
+	// Now parse the string (get the desired date if there are multiple)
 	var parsed = chrono.parse(string)[index]
 	// Check if a date was found in the string
 	if (parsed) {
@@ -48,7 +48,7 @@ var Event = function(string, index) {
 			var end = parsed.end.date()
 		}
 	}
-	this.triggerString = parsed.text;
+	this.text = parsed.text;
 }
 
 /*
@@ -175,7 +175,7 @@ jQuery(document).ready(function() {
 				// Get the google url
 				url = events[k].createGoogleCalendarUrl();
 				// Insert link into the keyword
-				insert_link(dateElements.eq(j), match(i), url)
+				insert_link(dateElements.eq(j), events[k].text, url)
 			}
 
 		}
