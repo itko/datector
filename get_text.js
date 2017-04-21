@@ -10,43 +10,45 @@ Number.prototype.pad = function(numDigits) {
 }
 
 /*
- * Event class. Takes a string and parses it into the day month, etc. For now it
- * doesn't support end dates, but that can easily be done. If the input string
- * cannot be parsed into a date, today's date is used.
+ * Event class. Takes a string and parses it into the day month, etc. An index
+ * is given for cases where there is more than one date. For now it doesn't
+ * support end dates, but that can easily be done. If the input string cannot be
+ * parsed into a date, today's date is used.
  */
-var Event = function(string) {
+var Event = function(string, index) {
 	// Use the datetime that's right now (in case the string doesn't contain a
 	// date)
 	var now = new Date();
 	this.day = now.getDate();
-	this.month = now.getMonth() + 1; //month starts at 0. ex. April = 3
+	this.month = now.getMonth() + 1; // month starts at 0. ex. April = 3
 	this.year = now.getFullYear();
 	this.hour = now.getHours();
 	this.minute = now.getMinutes();
 	// Now parse the string
-	var parsed = chrono.parse(string)[0]
+	var parsed = chrono.parse(string)[index]
 	// Check if a date was found in the string
 	if (parsed) {
 		// Check if there's a start date
 		if (parsed.start) {
 			// Use the parsed values
 			var start = parsed.start.date()
-			//alert (start)
+			// alert (start)
 			this.day = start.getDate();
-			this.month = start.getMonth() + 1; //month starts at 0. ex. April = 3
+			this.month = start.getMonth() + 1; // month starts at 0. ex. April
+												// = 3
 			this.year = start.getFullYear();
 			this.hour = start.getHours();
 			this.minute = start.getMinutes();
-			
-			
-			//alert (this.year)
-			
+
+			// alert (this.year)
+
 		}
 		// TODO add something for this
 		if (parsed.end) {
 			var end = parsed.end.date()
 		}
 	}
+	this.triggerString = parsed.text;
 }
 
 /*
@@ -62,6 +64,15 @@ Event.prototype.createGoogleCalendarUrl = function() {
 	dates = start + '/' + start
 	url = url + '&' + 'dates=' + dates
 	return url
+}
+
+function getEventsFromString(string) {
+	var events = [];
+	results = chrono.parse(string);
+	for (i = 0; i < results.length; i++) {
+		events.push(new Event(string, i));
+	}
+	return events
 }
 
 /*
@@ -113,7 +124,7 @@ function getMatches(x) {
 
 	var mIndex = 0
 	// var match = new dateMatch()
-	var match =  new Array()
+	var match = new Array()
 	for (var i = 0; i <= regExList.length - 1; i++) {
 		var tmpString = x
 		var tmpMatch = new Array()
@@ -128,43 +139,46 @@ function getMatches(x) {
 		}
 
 	}
-	
-	//remove duplicates from match
+
+	// remove duplicates from match
 	var uniqueMatches = [];
-	$.each(match, function(i, el){
-		if($.inArray(el, uniqueMatches) === -1) uniqueMatches.push(el);
+	$.each(match, function(i, el) {
+		if ($.inArray(el, uniqueMatches) === -1)
+			uniqueMatches.push(el);
 	});
-	
+
 	return uniqueMatches
 }
-
 
 jQuery(document).ready(function() {
 	allElements = jQuery('*');
 	text = get_text(allElements);
-	//get all unique "keywords" on the page
+	// get all unique "keywords" on the page
 	var match = getMatches(text)
 
-	//loop through all unique keywords
+	// loop through all unique keywords
 	for (var i = 0; i < match.length; i++) {
 		// Get all elements that contain the unique keyword
 		dateElements = getElementsContainingText(match[i])
-		
-		//creating an array only to determine the number of elements for the next loop
+
+		// creating an array only to determine the number of elements for the
+		// next loop
 		var dateElementArray = jQuery.makeArray(dateElements)
-		//loop through all found elements
-		for (var j = 0; j < dateElementArray.length; j++){
-			
-			//get text of each element
+		// loop through all found elements
+		for (var j = 0; j < dateElementArray.length; j++) {
+
+			// get text of each element
 			var elemText = get_text(dateElements.eq(j))
-			// Create an event with the given element text
-			event = new Event(elemText);
-			// Get the google url
-			url = event.createGoogleCalendarUrl();
-			// Insert link into the keyword
-			insert_link(dateElements.eq(j), match[i], url)
-			
+			// Create events from the text
+			events = getEventsFromString(elemText);
+			for (k = 0; k < events.length; k++) {
+				// Get the google url
+				url = events[k].createGoogleCalendarUrl();
+				// Insert link into the keyword
+				insert_link(dateElements.eq(j), match(i), url)
+			}
+
 		}
-		
+
 	}
 });
