@@ -35,7 +35,8 @@ var Event = function(string, index) {
 			// Use the parsed values
 			var start = parsed.start.date()
 			this.fullDate = new Date (start);
-			
+			alert(start)
+			alert(parsed.text)
 			this.day = start.getDate();
 			this.month = start.getMonth() + 1; // month starts at 0. ex. April
 												// = 3
