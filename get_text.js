@@ -19,12 +19,14 @@ var Event = function(string, index) {
 	// Use the datetime that's right now (in case the string doesn't contain a
 	// date)
 	var now = new Date();
+	this.fullDate = now;
 	this.day = now.getDate();
 	this.month = now.getMonth() + 1; // month starts at 0. ex. April = 3
 	this.year = now.getFullYear();
 	this.hour = now.getHours();
 	this.minute = now.getMinutes();
 	// Now parse the string (get the desired date if there are multiple)
+	chrono.parse("02/29/17")
 	var parsed = chrono.parse(string)[index]
 	// Check if a date was found in the string
 	if (parsed) {
@@ -32,7 +34,8 @@ var Event = function(string, index) {
 		if (parsed.start) {
 			// Use the parsed values
 			var start = parsed.start.date()
-			// alert (start)
+			this.fullDate = new Date (start);
+			
 			this.day = start.getDate();
 			this.month = start.getMonth() + 1; // month starts at 0. ex. April
 												// = 3
@@ -40,7 +43,6 @@ var Event = function(string, index) {
 			this.hour = start.getHours();
 			this.minute = start.getMinutes();
 
-			// alert (this.year)
 
 		}
 		// TODO add something for this
@@ -55,11 +57,22 @@ var Event = function(string, index) {
  * Public method. Returns a url that adds the event info to google calendar
  */
 Event.prototype.createGoogleCalendarUrl = function() {
+	
+	var d = this.fullDate
+	var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+	var utcDate = new Date(utc)
 	// Start with base url
 	var url = 'https://www.google.com/calendar/event?action=TEMPLATE'
 	// Add start datetime
-	var start = this.year.pad(4) + this.month.pad(2) + this.day.pad(2) + 'T'
-			+ this.hour.pad(2) + this.minute.pad(2) + '00Z'
+	
+	var day = utcDate.getDate();
+	var month = utcDate.getMonth() + 1; // month starts at 0. ex. April = 3
+	var year = utcDate.getFullYear();
+	var hour = utcDate.getHours();
+	var minute = utcDate.getMinutes();
+	
+	var start = year.pad(4) + month.pad(2) + day.pad(2) + 'T'
+			+ hour.pad(2) + minute.pad(2) + '00Z'
 	// TODO No end for now
 	dates = start + '/' + start
 	url = url + '&' + 'dates=' + dates
